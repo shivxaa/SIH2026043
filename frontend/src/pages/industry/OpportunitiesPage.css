@@ -1,0 +1,118 @@
+.opportunities-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.page-header h1 {
+  margin: 0 0 8px 0;
+  color: var(--color-primary);
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 12px;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  background: var(--color-background);
+}
+
+.tab-btn.active {
+  background: var(--color-primary-light);
+  color: var(--color-surface);
+  font-weight: 500;
+}
+
+.opp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.opp-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.opp-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.opp-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.opp-card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.univ-name {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.support-needed {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  background: var(--color-background);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-sm);
+}
+
+.opp-actions {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.opp-actions button {
+  width: 100%;
+}

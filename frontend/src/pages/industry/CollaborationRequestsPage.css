@@ -1,0 +1,71 @@
+.collab-req-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.request-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.req-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.req-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.req-title h3 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+
+.req-date {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+.req-details p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+}
+
+.req-details strong {
+  color: var(--color-text);
+}
+
+.req-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.no-requests {
+  padding: 40px;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+}

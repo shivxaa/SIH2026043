@@ -1,0 +1,7 @@
+.match-score-wrapper { position: relative; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; }
+.score-circle-progress { transition: stroke-dashoffset 1s ease-in-out; transform: rotate(-90deg); transform-origin: 50% 50%; }
+.score-text { position: absolute; display: flex; align-items: center; justify-content: center; width: 100%; top: 0; }
+.size-lg .score-text { height: 80px; font-size: 1.25rem; font-weight: 700; }
+.size-md .score-text { height: 48px; font-size: 0.85rem; font-weight: 600; }
+.size-sm .score-text { height: 32px; font-size: 0.65rem; font-weight: 600; }
+.score-label { margin-top: 8px; font-size: 0.85rem; color: var(--color-text-secondary); font-weight: 500; }

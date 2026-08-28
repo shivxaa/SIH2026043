@@ -1,0 +1,16 @@
+.select-group { display: flex; flex-direction: column; margin-bottom: 16px; }
+.select-label { margin-bottom: 6px; font-weight: 500; font-size: 0.875rem; color: var(--color-text); }
+.req { color: var(--color-danger); }
+.select-field {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  background: var(--color-surface);
+  outline: none;
+}
+.select-field:focus { border-color: var(--color-accent); }
+.select-field.has-error { border-color: var(--color-danger); }
+.select-error { font-size: 0.75rem; color: var(--color-danger); margin-top: 4px; }

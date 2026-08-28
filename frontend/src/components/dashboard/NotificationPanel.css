@@ -1,0 +1,14 @@
+.notification-panel { background: var(--color-surface); border-radius: var(--radius-md); border: 1px solid var(--color-border); display: flex; flex-direction: column; }
+.panel-header { padding: 16px 20px; border-bottom: 1px solid var(--color-border); }
+.panel-header h3 { margin: 0; font-size: 1.05rem; }
+.panel-list { display: flex; flex-direction: column; }
+.notif-item { padding: 12px 20px; border-bottom: 1px solid var(--color-border-light); display: flex; gap: 12px; }
+.notif-item.unread { background: var(--color-accent-50); }
+.notif-content { flex: 1; }
+.notif-title { margin: 0 0 4px; font-size: 0.9rem; color: var(--color-text); }
+.notif-item.unread .notif-title { font-weight: 600; }
+.notif-time { font-size: 0.75rem; color: var(--color-text-secondary); }
+.panel-footer { padding: 12px; text-align: center; }
+.btn-view-all { background: none; border: none; color: var(--color-accent); font-size: 0.9rem; font-weight: 500; cursor: pointer; }
+.btn-view-all:hover { text-decoration: underline; }
+.empty { padding: 20px; text-align: center; color: var(--color-text-secondary); font-size: 0.9rem; }

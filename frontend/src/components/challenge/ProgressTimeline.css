@@ -1,0 +1,13 @@
+.progress-timeline { display: flex; flex-direction: column; }
+.timeline-item { display: flex; gap: 16px; min-height: 60px; }
+.timeline-indicator { display: flex; flex-direction: column; align-items: center; width: 24px; }
+.timeline-dot { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--color-background); border: 2px solid var(--color-border); z-index: 2; }
+.timeline-dot svg { width: 12px; height: 12px; color: white; }
+.timeline-line { flex: 1; width: 2px; background: var(--color-border); margin: 4px 0; }
+.timeline-content { padding-bottom: 24px; flex: 1; }
+.timeline-title { margin: 0 0 4px; font-size: 0.95rem; color: var(--color-text); font-weight: 500; }
+.timeline-date { margin: 0; font-size: 0.8rem; color: var(--color-text-secondary); }
+.timeline-item.completed .timeline-dot { background: var(--color-success); border-color: var(--color-success); }
+.timeline-item.completed .timeline-line { background: var(--color-success); }
+.timeline-item.active .timeline-dot { background: white; border-color: var(--color-accent); box-shadow: 0 0 0 4px var(--color-accent-50); }
+.timeline-item.active .timeline-title { color: var(--color-accent); font-weight: 600; }

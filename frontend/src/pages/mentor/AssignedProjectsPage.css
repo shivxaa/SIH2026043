@@ -1,0 +1,186 @@
+.assigned-projects-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.assigned-projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.assigned-project-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.header-info h2 {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin: 0 0 8px 0;
+}
+
+.challenge-name {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.team-info-section {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.team-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.team-details .label {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.team-details .value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.team-avatars {
+  display: flex;
+  margin-left: auto;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 2px solid var(--color-surface);
+  margin-left: -10px;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.avatar:last-child {
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+.project-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 16px;
+  background: var(--color-background);
+  padding: 16px;
+  border-radius: var(--radius-md);
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.stat-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.progress-box {
+  justify-content: center;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.btn-full-review, .btn-give-feedback {
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-full-review {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-full-review:hover {
+  background: var(--color-primary-light);
+}
+
+.btn-give-feedback {
+  background: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.btn-give-feedback:hover {
+  background: var(--color-accent-50);
+}
+
+@media (max-width: 768px) {
+  .team-info-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .team-avatars {
+    margin-left: 0;
+  }
+  .project-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .card-actions {
+    flex-direction: column;
+  }
+  .btn-full-review, .btn-give-feedback {
+    text-align: center;
+  }
+}

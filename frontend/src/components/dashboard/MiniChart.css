@@ -1,0 +1,6 @@
+.mini-chart { width: 100%; display: flex; flex-direction: column; }
+.bar-chart .bar-area { display: flex; align-items: flex-end; justify-content: space-around; height: 100%; padding-bottom: 24px; position: relative; }
+.bar-col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; width: 15%; position: relative; }
+.bar-fill { width: 100%; border-radius: 4px 4px 0 0; transition: height 0.3s; min-height: 4px; }
+.bar-label { position: absolute; bottom: -20px; font-size: 0.7rem; color: var(--color-text-secondary); white-space: nowrap; }
+.empty-chart { align-items: center; justify-content: center; color: var(--color-text-secondary); }

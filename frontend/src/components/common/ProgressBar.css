@@ -1,0 +1,19 @@
+.progress-wrapper { display: flex; align-items: center; width: 100%; gap: 12px; }
+.progress-track {
+  width: 100%;
+  background: var(--color-border-light);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-sm { height: 4px; }
+.progress-md { height: 8px; }
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+.fill-accent { background: var(--color-accent); }
+.fill-success { background: var(--color-success); }
+.fill-warning { background: var(--color-warning); }
+.fill-danger { background: var(--color-danger); }
+.progress-label { font-size: 0.75rem; font-weight: 500; color: var(--color-text-secondary); }

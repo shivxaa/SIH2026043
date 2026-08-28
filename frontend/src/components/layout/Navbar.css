@@ -1,0 +1,31 @@
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  height: 64px;
+}
+.navbar-container {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px;
+}
+.navbar-logo { display: flex; align-items: center; text-decoration: none; color: var(--color-primary); }
+.logo-icon { width: 28px; height: 28px; margin-right: 8px; color: var(--color-accent); }
+.logo-text { display: flex; flex-direction: column; line-height: 1; }
+.logo-title { font-weight: 700; font-size: 1.2rem; }
+.logo-subtitle { font-size: 0.7rem; font-weight: 600; color: var(--color-warning); }
+.navbar-links { display: flex; gap: 24px; }
+.nav-link { text-decoration: none; color: var(--color-text); font-weight: 500; font-size: 0.9rem; transition: color 0.2s; }
+.nav-link:hover { color: var(--color-accent); }
+.navbar-actions { display: flex; align-items: center; gap: 16px; }
+.nav-btn-login { text-decoration: none; color: var(--color-text); font-weight: 500; }
+.nav-btn-primary { background: var(--color-accent); color: white; border: none; padding: 8px 16px; border-radius: var(--radius-sm); font-weight: 500; cursor: pointer; }
+.nav-btn-primary:hover { background: var(--color-accent-light); }
+.nav-bell { background: none; border: none; cursor: pointer; position: relative; color: var(--color-text-secondary); width: 24px; height: 24px; }
+.bell-badge { position: absolute; top: -4px; right: -4px; background: var(--color-danger); color: white; font-size: 0.6rem; padding: 2px 4px; border-radius: 10px; font-weight: bold; }
+.mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; width: 24px; height: 24px; color: var(--color-text); }
+@media (max-width: 768px) {
+  .navbar-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: white; flex-direction: column; padding: 20px; border-bottom: 1px solid var(--color-border); }
+  .navbar-links.active { display: flex; }
+  .mobile-menu-btn { display: block; }
+  .nav-btn-login, .nav-btn-primary { display: none; }
+}

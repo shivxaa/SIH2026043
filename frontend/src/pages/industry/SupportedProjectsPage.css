@@ -1,0 +1,91 @@
+.supported-projects-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.sp-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sp-header h3 {
+  margin: 0 0 4px 0;
+  color: var(--color-primary);
+}
+
+.sp-univ {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.sp-contribution {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: var(--color-background);
+  border-radius: var(--radius-sm);
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: var(--color-text-secondary);
+}
+
+.sp-impact {
+  border-top: 1px dashed var(--color-border);
+  border-bottom: 1px dashed var(--color-border);
+  padding: 12px 0;
+  margin: 8px 0;
+}
+
+.impact-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metric-val {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-success);
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.sp-timeline h4 {
+  margin: 0 0 12px 0;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+@media (max-width: 600px) {
+  .sp-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,12 @@
+.activity-timeline { display: flex; flex-direction: column; padding: 12px 0; }
+.act-item { display: flex; gap: 16px; }
+.act-indicator { display: flex; flex-direction: column; align-items: center; width: 16px; }
+.act-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-primary); z-index: 2; margin-top: 4px; }
+.act-dot.success { background: var(--color-success); }
+.act-dot.warning { background: var(--color-warning); }
+.act-dot.danger { background: var(--color-danger); }
+.act-dot.accent { background: var(--color-accent); }
+.act-line { flex: 1; width: 2px; background: var(--color-border-light); margin: 4px 0; min-height: 24px; }
+.act-content { padding-bottom: 16px; flex: 1; }
+.act-text { margin: 0 0 4px; font-size: 0.9rem; color: var(--color-text); }
+.act-time { font-size: 0.75rem; color: var(--color-text-secondary); }

@@ -1,0 +1,20 @@
+.input-group { display: flex; flex-direction: column; margin-bottom: 16px; }
+.input-label { margin-bottom: 6px; font-weight: 500; font-size: 0.875rem; color: var(--color-text); }
+.req { color: var(--color-danger); }
+.input-wrapper { position: relative; display: flex; align-items: center; }
+.input-icon { position: absolute; left: 12px; color: var(--color-text-secondary); display: flex; }
+.input-field {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  outline: none;
+}
+.input-field.has-icon { padding-left: 36px; }
+.input-field:focus { border-color: var(--color-accent); }
+.input-field.has-error { border-color: var(--color-danger); }
+.input-field:disabled { background: var(--color-background); cursor: not-allowed; }
+.input-error { font-size: 0.75rem; color: var(--color-danger); margin-top: 4px; }

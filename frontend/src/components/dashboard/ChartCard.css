@@ -1,0 +1,4 @@
+.chart-card { background: var(--color-surface); border-radius: var(--radius-md); padding: 20px; border: 1px solid var(--color-border); box-shadow: var(--shadow-xs); }
+.chart-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.chart-title { margin: 0; font-size: 1.1rem; font-weight: 600; color: var(--color-text); }
+.chart-body { width: 100%; position: relative; }

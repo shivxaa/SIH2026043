@@ -1,0 +1,344 @@
+.submit-challenge-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  font-size: 1.75rem;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+
+.form-container {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: 32px;
+}
+
+/* Step Indicator */
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-background);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.step-label {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  text-align: center;
+}
+
+.step-line {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background: var(--color-border);
+  z-index: -1;
+}
+
+.step.active .step-circle {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: white;
+}
+
+.step.active .step-label {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.step.completed .step-circle {
+  border-color: var(--color-success);
+  background: var(--color-success);
+  color: white;
+}
+
+.step.completed .step-line {
+  background: var(--color-success);
+}
+
+/* Form Sections */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin: 0 0 8px 0;
+}
+
+.section-desc {
+  color: var(--color-text-secondary);
+  margin: 0 0 24px 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-100);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* Upload Area */
+.upload-area {
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 48px 24px;
+  text-align: center;
+  background: var(--color-background);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-50);
+}
+
+.upload-icon {
+  color: var(--color-text-light);
+  margin-bottom: 16px;
+}
+
+.upload-area h3 {
+  margin: 0 0 8px 0;
+  color: var(--color-text);
+}
+
+.upload-area p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.no-files-text {
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+/* AI Analysis State */
+.ai-loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.brain-pulse-icon {
+  animation: pulse 2s infinite ease-in-out;
+  margin-bottom: 24px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.ai-loading-state h3 {
+  font-size: 1.25rem;
+  color: var(--color-text);
+  margin: 0 0 8px 0;
+}
+
+.ai-loading-state p {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Review Section */
+.review-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.review-block {
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  border: 1px solid var(--color-border);
+}
+
+.review-block h3 {
+  margin: 0 0 16px 0;
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 8px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.review-item {
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.review-item .label {
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.review-item.full {
+  grid-column: 1 / -1;
+  margin-top: 16px;
+}
+
+.review-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background: var(--color-accent-50);
+  color: var(--color-accent);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.skill-tag {
+  background: var(--color-warning-50);
+  color: var(--color-warning);
+}
+
+/* Published State */
+.success-section {
+  align-items: center;
+  text-align: center;
+  padding: 48px 0;
+}
+
+.success-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: var(--color-success-50);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.success-title {
+  font-size: 1.75rem;
+  color: var(--color-text);
+  margin: 0 0 16px 0;
+}
+
+.success-desc {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  max-width: 500px;
+  margin: 0 0 32px 0;
+}
+
+.challenge-id-box {
+  background: var(--color-background);
+  border: 1px dashed var(--color-border);
+  padding: 16px 32px;
+  border-radius: var(--radius-md);
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-bottom: 40px;
+}
+
+.success-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Utilities */
+.mt-2 { margin-top: 8px; }
+.mt-4 { margin-top: 16px; }
+.mt-6 { margin-top: 24px; }

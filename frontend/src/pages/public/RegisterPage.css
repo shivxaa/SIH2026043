@@ -1,0 +1,169 @@
+.register-page {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background);
+  padding: 2rem;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 650px;
+}
+
+.register-card {
+  padding: 2.5rem;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.register-header h2 {
+  font-size: 1.75rem;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.register-header p {
+  color: var(--color-text-secondary);
+}
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.step-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-border);
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.step-dot.active {
+  background: var(--color-accent);
+  color: white;
+}
+
+.step-line {
+  flex-grow: 1;
+  max-width: 100px;
+  height: 3px;
+  background: var(--color-border);
+  margin: 0 0.5rem;
+  transition: all 0.3s;
+}
+
+.step-line.active {
+  background: var(--color-accent);
+}
+
+.step-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.role-select-card {
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.role-select-card:hover {
+  border-color: var(--color-accent-light);
+  background: var(--color-accent-50);
+}
+
+.role-select-card.selected {
+  border-color: var(--color-accent);
+  background: var(--color-accent-50);
+  box-shadow: 0 0 0 1px var(--color-accent);
+}
+
+.role-select-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.role-select-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.role-select-card p {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.step-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.step-actions.right {
+  justify-content: flex-end;
+}
+
+.form-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-family: inherit;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.terms-check {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.terms-check label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.register-footer a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+}

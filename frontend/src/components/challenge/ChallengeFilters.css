@@ -1,0 +1,8 @@
+.challenge-filters { background: var(--color-surface); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+.filters-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.filters-header h3 { margin: 0; font-size: 1.1rem; }
+.btn-clear { background: none; border: none; color: var(--color-text-secondary); cursor: pointer; font-size: 0.85rem; text-decoration: underline; }
+.filter-group { margin-bottom: 16px; }
+.filter-group label { display: block; margin-bottom: 6px; font-size: 0.85rem; font-weight: 500; }
+.filter-group select { width: 100%; padding: 8px; border: 1px solid var(--color-border); border-radius: var(--radius-sm); outline: none; }
+.filter-group select:focus { border-color: var(--color-accent); }
